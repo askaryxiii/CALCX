@@ -1,3 +1,4 @@
+
 function getInput(index, type) {
   var intialNumbers = document.querySelectorAll(".numbers");
   var intialOperators = document.querySelectorAll(".operators");
@@ -12,10 +13,10 @@ function getInput(index, type) {
 
 function displayInResult(dispalyedObject) {
   var displayedResult = document.querySelector(".result");
-  displayedResult.innerHTML += dispalyedObject;
+  displayedResult.value = displayedResult.value + dispalyedObject;
 }
 
-function deleteAll(deleteAllResult) {
+function deleteAll() {
   var displayedResult = document.querySelector(".result");
-  displayedResult.innerHTML = "";
+  displayedResult.value = "";
 }
