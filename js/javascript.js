@@ -1,4 +1,4 @@
-function getNumber(index, type) {
+function getInput(index, type) {
   var intialNumbers = document.querySelectorAll(".numbers");
   var intialOperators = document.querySelectorAll(".operators");
   if ((type == true)) {
