@@ -2,79 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>CALCX</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/bootstrap.min.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>CALCX</title>
 </head>
 
 <body>
-    <div class="container d-flex align-items-center my-5 row">
-        <div
-            class="container bg-dark col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-7 col-xs-11 d-flex flex-column py-4 rounded-5">
-            <div class="themeSwitch"></div>
-            <div class="resultSection d-flex px-2">
-                <input type="text" class="result text-white fs-1 fw-bold m-0 bg-dark border-0">
-            </div>
-            <div class="buttonSection row gap-3 bg-dark px-2 pb-2 pt-3 justify-content-center">
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(0 , true)">7</button>
+        <div class="container my-5 row">
+                <div class="resultSection my-5">
+                        <input type="text" class="result">
                 </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(1 , true)">8</button>
+                <div class="numbersSection">
+                        <button class="numerical btn btn-primary">1</button>
+                        <button class="numerical btn btn-primary">2</button>
+                        <button class="numerical btn btn-primary">3</button>
+                        <button class="numerical btn btn-primary">4</button>
+                        <button class="numerical btn btn-primary">5</button>
+                        <button class="numerical btn btn-primary">6</button>
+                        <button class="numerical btn btn-primary">7</button>
+                        <button class="numerical btn btn-primary">8</button>
+                        <button class="numerical btn btn-primary">9</button>
+                        <button class="numerical btn btn-primary">0</button>
+                        <button class="numerical btn btn-primary">+</button>
+                        <button class="numerical btn btn-primary">-</button>
+                        <button class="numerical btn btn-primary">/</button>
+                        <button class="numerical btn btn-primary">*</button>
                 </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(2 , true)">9</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="operators rounded-4 w-75"
-                        onclick="getInput(0, false)">+</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(3 , true)">4</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(4 , true)">5</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(5 , true)">6</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="operators rounded-4 w-75"
-                        onclick="getInput(1, false)">-</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(6 , true)">1</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(7 , true)">2</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(8 , true)">3</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="operators rounded-4 w-75"
-                        onclick="getInput(2, false)">*</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="numbers rounded-4 w-75"
-                        onclick="getInput(9 , true)">0</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="operators rounded-4 w-75"
-                        onclick="getInput(3, false)">/</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="actions rounded-4 w-75"
-                        onclick="deleteAll()">DEL</button>
-                </div>
-                <div class="col-2 p-0 m-0 d-flex justify-content-center"><button class="actions rounded-4 w-75"
-                        onclick="deleteAll('deleteAllResult')">C</button>
-                </div>
-                <div class="col-12 p-0 m-0 d-flex justify-content-center"><button class="operators rounded-4 w-75"
-                        onclick="getInput(4, false)">=</button>
-                </div>
-            </div>
         </div>
-    </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/javascript.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/javascript.js"></script>
 </body>
 
 </html>
