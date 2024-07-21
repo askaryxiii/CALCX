@@ -1,7 +1,18 @@
-/* .resultSection {
-  height: 3rem;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+
+.resultSection {
+
+  font-family: "Orbitron", sans-serif;
   overflow: auto;
 }
+
+.result { 
+  height: 4rem;
+}
+
+
 .result:focus-visible {
   outline: none;
-} */
+}
